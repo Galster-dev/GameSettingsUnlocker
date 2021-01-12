@@ -1,0 +1,31 @@
+# Among Us Game settings unlocker
+## What does it do?
+As you know, in Among Us you can't change map or impostor amount unless you recreate a lobby. We don't know why Innersloth did like that, but we don't like it!\
+So basically, this patch allows unlocks game option marked as "hide for online". For now there are only 3 such options: Map and impostor amount\
+This patch works on EVERY server (unless they manually patched it idk why), even on official Innersloth servers
+
+# How to install
+For there are has 3 versions: [static](https://github.com/Galster2010/GameSettingsUnlocker/tree/static), [runtime](https://github.com/Galster2010/GameSettingsUnlocker/tree/runtime) and [BepInEx](https://github.com/Galster2010/GameSettingsUnlocker/tree/BepInEx)
+
+- [Static](https://github.com/Galster2010/GameSettingsUnlocker/tree/static) (recommended)
+    Patches game's executable, which means you can even need to launch it only once
+- [Runtime](https://github.com/Galster2010/GameSettingsUnlocker/tree/runtime)
+    For people who scared about file editing.\
+    It patches memory at runtime which means you have to launch every time you want to use it.
+- [BepInEx](https://github.com/Galster2010/GameSettingsUnlocker/tree/BepInEx)
+    For people who scared about file editing, but also have [BepInEx](https://github.com/BepInEx/BepInEx/) installed.\
+    Just a [BepInEx](https://github.com/BepInEx/BepInEx/) plugin which doesn't conflict with any others (i hope)
+
+# This is a runtime version
+To get others, click on required version above
+
+# How to use
+1. Get [latest runtime release](https://github.com/Galster2010/GameSettingsUnlocker/releases/latest) from [releases](https://github.com/Galster2010/GameSettingsUnlocker/releases/)
+2. Run the executable. Everything should be fine
+3. Enjoy. (works even in lobby)
+
+# How to disable
+1. Run the executable again. It should ask you if you want to revert the patch
+2. Answer `y` (yes)
+## or
+- Just restart the game. Runtime version means it doesn't affect your files
