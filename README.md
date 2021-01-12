@@ -1,7 +1,7 @@
 # Among Us Game settings unlocker
 ## What does it do?
 As you know, in Among Us you can't change map or impostor amount unless you recreate a lobby. We don't know why Innersloth did like that, but we don't like it!\
-So basically, this patch allows unlocks game option marked as "hide for online". For now there are only 3 such options: Map and impostor amount\
+So basically, this patch allows unlocks game option marked as "hide for online". For now there are only 2 such options: Map and impostor amount\
 This patch works on EVERY server (unless they manually patched it idk why), even on official Innersloth servers
 
 # How to install
