@@ -5,7 +5,7 @@ So basically, this patch allows unlocks game option marked as "hide for online".
 This patch works on EVERY server (unless they manually patched it idk why), even on official Innersloth servers
 
 # How to install
-For there are has 3 versions: [static](https://github.com/Galster2010/GameSettingsUnlocker/tree/static), [runtime](https://github.com/Galster2010/GameSettingsUnlocker/tree/runtime) and [BepInEx](https://github.com/Galster2010/GameSettingsUnlocker/tree/BepInEx)
+For now there are only 3 versions: [static](https://github.com/Galster2010/GameSettingsUnlocker/tree/static), [runtime](https://github.com/Galster2010/GameSettingsUnlocker/tree/runtime) and [BepInEx](https://github.com/Galster2010/GameSettingsUnlocker/tree/BepInEx)
 
 - [Static](https://github.com/Galster2010/GameSettingsUnlocker/tree/static) (recommended)
     Patches game's executable, which means you can even need to launch it only once
