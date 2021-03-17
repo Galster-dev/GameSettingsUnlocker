@@ -65,13 +65,13 @@ inline bool freeMap(uintptr_t base, HANDLE& map)
 std::wstring getProcessPath()
 {
 
-    HWND hwnd = FindWindowA(NULL, "Among Us");
+    HWND hwnd = FindWindowA("UnityWndClass", "Among Us");
     logInfo("Waiting for Among Us...", WHITE_TEXT);
 
     while (!hwnd)
     {
         Sleep(500);
-        hwnd = FindWindowA(NULL, "Among Us");
+        hwnd = FindWindowA("UnityWndClass", "Among Us");
     }
 
     DWORD pid;
@@ -91,7 +91,6 @@ std::wstring getProcessPath()
     }
     std::wstring path(buf, buf + len);
     logInfo("Close the game to continue", WHITE_TEXT);
-    //delete[] buf;
     WaitForSingleObject(process, INFINITE);
     return path;
 }
@@ -140,7 +139,7 @@ int main()
     }
     else if (buf != PATCH.off)
     {
-        logError("Byte signature is incorrect. Are you on v2020.12.9s Steam?");
+        logError("Byte signature is incorrect. Are you on v2021.3.5s Steam?");
     }
 
     logInfo("Patching...");
