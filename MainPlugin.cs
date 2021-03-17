@@ -4,25 +4,23 @@ using HarmonyLib;
 using UnhollowerBaseLib;
 using UnityEngine;
 
-using GameSettingsMenu = JCLABFFHPEO;
-
 namespace GameSettingsUnlocker_BepInEx
 {
-    [BepInPlugin(id, "Game settings unlocker", "1.0.0")]
-    public class Main : BasePlugin
+    [BepInPlugin(Id, "Game settings unlocker", "1.0.1")]
+    public class MainPlugin : BasePlugin
     {
-        public const string id = "ru.galster.gamesettingsunlocker";
-        public Harmony Harmony { get; } = new Harmony(id);
+        public const string Id = "ru.galster.gamesettingsunlocker";
+        private Harmony Harmony { get; } = new Harmony(Id);
         public override void Load()
         {
             Harmony.PatchAll();
         }
     }
 
-    [HarmonyPatch(typeof(GameSettingsMenu), nameof(GameSettingsMenu.OnEnable))]
+    [HarmonyPatch(typeof(GameSettingMenu), nameof(GameSettingMenu.OnEnable))]
     public static class GameSettingsMenu_OnEnable
     {
-        public static void Prefix(ref GameSettingsMenu __instance)
+        public static void Prefix(ref GameSettingMenu __instance)
         {
             __instance.HideForOnline = new Il2CppReferenceArray<Transform>(0);
         }
