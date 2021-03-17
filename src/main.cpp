@@ -62,13 +62,13 @@ int main()
     SetConsoleTitleA("Among Us Game settings unlocker");
     logInfo("Game settings unlocker patch by Galster\n", GREEN_TEXT);
     
-    HWND hwnd = FindWindowA(NULL, "Among Us");
+    HWND hwnd = FindWindowA("UnityWndClass", "Among Us");
     logInfo("Waiting for Among Us...", WHITE_TEXT);
 
     while (!hwnd)
     {
         Sleep(500);
-        hwnd = FindWindowA(NULL, "Among Us");
+        hwnd = FindWindowA("UnityWndClass", "Among Us");
     }
     Sleep(1000);
 
@@ -107,7 +107,7 @@ int main()
     }
     else if (buf != PATCH.off)
     {
-        logError("Byte signature is incorrect. Are you on v2020.12.9s Steam?");
+        logError("Byte signature is incorrect. Are you on v2021.3.5s Steam?");
     }
 
     logInfo("Patching...");

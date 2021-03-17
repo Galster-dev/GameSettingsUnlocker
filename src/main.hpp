@@ -18,7 +18,7 @@ struct BytePatch
 
 static const BytePatch PATCH =
 {
-    0x1407ECD, // GameAssembly.dll offset to required instructions
+    0x1A5B08D, // GameAssembly.dll offset to required instructions
     {
         // bytes to enable patch
         0x90, 0x90, 0x90, 0x90, // NOPing CMP instruction since we don't need it
@@ -26,7 +26,7 @@ static const BytePatch PATCH =
     },
     {
         // bytes to disable patch
-        0x83, 0x78, 0x74, 0x01, // cmp byte ptr [eax+74], 1
+        0x83, 0x78, 0x78, 0x01, // cmp byte ptr [eax+74], 1
                                 // cmp current GameState with GameState.OnlineGame (1)
         0x75                    // jne 5A            (5A not included)
                                 // jump if not equal (goes to `else` code part)
